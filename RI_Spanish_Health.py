@@ -75,11 +75,11 @@ with col2:
 col1, col2 = st.columns([0.5,0.5])
 with col1:
     #Choose one specialty from below:
-    especialidad = st.selectbox(label = 'Elige una especialidad de las siguientes:', options = np.insert(np.sort(data["Especialidad"].unique()),0,"Todas las especialidads"))
+    especialidad = st.selectbox(label = 'Elige una especialidad de las siguientes:', options = np.insert(np.sort(data["Especialidad"].unique()),0,"Todas las especialideds"))
     st.write('Usted seleccionó:', especialidad)
 
     #filter data by the choice
-    if especialidad != "Todas las especialidads":
+    if especialidad != "Todas las especialideds":
         #option 1: Using a mask:
     #    mask=data["Department"]==department
     #    data=data[mask]
